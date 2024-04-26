@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "pnpm -F @soetas/shared test",
     "prepare": "husky"
   },
   "keywords": [],
@@ -14,13 +14,22 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^9.1.1",
+    "@types/node": "^20.12.7",
+    "@types/which": "^3.0.3",
     "eslint": "^9.1.1",
+    "globals": "^15.0.0",
     "husky": "^9.0.11",
     "markdownlint": "^0.34.0",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.5"
+    "rollup": "^4.16.4",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.7.1",
+    "unbuild": "^2.0.0",
+    "vitest": "^1.5.2"
   },
   "dependencies": {
-    "@soetas/shared": "workspace:^"
+    "@soetas/shared": "workspace:^",
+    "which": "^4.0.0"
   }
 }
