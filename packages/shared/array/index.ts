@@ -9,3 +9,7 @@ export function remove<T>(array:T[], value:T) {
 export function exclude<T>(array:T[], value:T) {
   return array.slice().filter(v => v!==value)
 }
+
+export function unique<T>(array:T[]) {
+  return [...new Set(array)]
+}
